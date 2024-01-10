@@ -470,6 +470,20 @@ h2.title {
     font-size: 80px;
   }
 }
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./assets/img/overlay.gif);
+  background-position: 0 0;
+  background-size: 250px;
+  opacity: 0.06;
+  pointer-events: none;
+  z-index: 300;
+}
+
 .emoji {
   position: fixed;
   bottom: 40px;
@@ -899,20 +913,6 @@ h2.title {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.sc-project .project-area:nth-child(2) .video-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-.sc-project .project-area:nth-child(2) .video-box video {
-  width: auto;
-  height: 100%;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
 .sc-project .project-area .marquee {
   position: absolute;
   top: 50%;
@@ -1031,6 +1031,7 @@ h2.title {
 .sc-project .coin {
   position: relative;
   width: 10vw;
+  max-width: 250px;
   height: 10vw;
   -webkit-animation: rotating 20s infinite;
           animation: rotating 20s infinite;
@@ -1050,7 +1051,6 @@ h2.title {
   height: 10vw;
 }
 .sc-project .fx2 .txt-box {
-  padding: 8.3vw 4.1vw 4.1vw;
   color: #fff;
   font-size: 3vw;
   -webkit-transition: -webkit-transform 0.3s;

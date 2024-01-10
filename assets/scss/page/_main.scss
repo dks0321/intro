@@ -1,3 +1,17 @@
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./assets/img/overlay.gif);
+    background-position: 0 0;
+    background-size: 250px;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 300;
+}
 //emoji
 .emoji{
     position: fixed;
@@ -355,18 +369,6 @@
                 object-fit: cover;
             }
         }
-        &:nth-child(2){
-            .video-box{
-                display: flex;
-                justify-content: center;
-            video{
-                width: auto;
-                height: 100%;
-                object-fit: fill;
-                
-            }
-        }
-        }
         .marquee{
             position: absolute;
             top: 50%;
@@ -451,6 +453,7 @@
     .coin{
         position: relative;
         width: 10vw;
+        max-width: 250px;
         height: 10vw;
         animation: rotating 20s infinite;
         transition-timing-function: linear;
@@ -463,7 +466,7 @@
             height: 10vw;
         }
         .txt-box{
-            padding: 8.3vw 4.1vw 4.1vw;
+            // padding: 8.3vw 4.1vw 4.1vw;
             color: #fff;
             font-size: 3vw;
             transition: transform 0.3s;
