@@ -476,6 +476,9 @@ h2.title {
   }
 }
 @media (max-width: 500px) {
+  .footer {
+    min-height: 630px;
+  }
   .footer .last-area {
     font-size: 80px;
   }
@@ -549,19 +552,26 @@ h2.title {
 .sc-visual {
   position: relative;
   overflow: hidden;
-  padding: 180px 60px;
+  padding: 14vw 10vw;
   font-family: "monetasans1", "Pretendard", sans-serif;
   background: #000;
 }
-.sc-visual .wrap {
+.sc-visual .group-wrap {
   position: relative;
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.sc-visual .wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   opacity: 0;
-  -webkit-transform: translateY(30%);
-          transform: translateY(30%);
-  z-index: 5;
 }
 .sc-visual .txt {
   font-size: 5vw;
@@ -642,8 +652,8 @@ h2.title {
   position: absolute;
   left: 0;
   display: inline-block;
-  width: 28vw;
-  height: 28vw;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   background: linear-gradient(130deg, #ff7a18, #af002d 41.07%, #319197 76.05%);
   opacity: 0.7;
@@ -694,7 +704,7 @@ h2.title {
   max-width: 700px;
   margin-left: auto;
   width: 100%;
-  font-size: 2vw;
+  font-size: 26px;
 }
 
 .sc-project {
@@ -1139,7 +1149,7 @@ h2.title {
   border-radius: 25px;
   padding: 1vw 3vw;
   color: #fff;
-  font-size: 28px;
+  font-size: 20px;
 }
 .sc-project .pd5 .marquee .wrap span:hover {
   background: #e0fd60;
@@ -1206,7 +1216,7 @@ h2.title {
   font-size: 20px;
 }
 .sc-skill .skill-wrap .txt-box .category span {
-  padding: 5px 10px;
+  padding: 2px 5px;
   border-radius: 25px;
 }
 .sc-skill .skill-wrap .front-box {
@@ -1265,9 +1275,6 @@ h2.title {
 }
 
 @media (max-width: 1024px) {
-  .sc-visual {
-    padding: 100px 60px;
-  }
   .sc-build .inner {
     padding: 65px 20px;
   }
@@ -1280,7 +1287,7 @@ h2.title {
     margin-top: 30px;
   }
   .sc-build .sub-title {
-    font-size: 2.6vw;
+    font-size: 18px;
   }
   .sc-project .headline span::before {
     bottom: 4px;
@@ -1306,7 +1313,27 @@ h2.title {
 }
 @media (max-width: 720px) {
   .sc-visual {
-    padding: 80px 40px;
+    padding: 24vw 2vw;
+  }
+  .sc-visual .circle-area .circle:nth-child(1) {
+    top: 5vw;
+    left: -23vw;
+  }
+  .sc-visual .circle-area .circle:nth-child(2) {
+    top: 3vw;
+    left: -8vw;
+  }
+  .sc-visual .circle-area .circle:nth-child(3) {
+    top: 15vw;
+    left: 1vw;
+  }
+  .sc-visual .circle-area .circle:nth-child(4) {
+    top: 8vw;
+    left: 17vw;
+  }
+  .sc-visual .circle-area .circle:nth-child(5) {
+    top: 25vw;
+    left: 26vw;
   }
   .sc-project .headline span::before {
     bottom: 0px;
@@ -1314,6 +1341,9 @@ h2.title {
     padding-left: 1px;
     padding-right: 1px;
     font-size: 4px;
+  }
+  .sc-project .group-wrap {
+    gap: 4px;
   }
   .sc-project .project-area {
     height: 350px;
@@ -1339,7 +1369,7 @@ h2.title {
     font-size: 20px;
   }
   .sc-visual {
-    padding: 80px 10px;
+    padding: 35vw 2vw;
   }
   .sc-visual .create-box {
     height: 11vw;
@@ -1354,7 +1384,7 @@ h2.title {
   }
   .sc-visual .circle-area .circle:nth-child(1) {
     top: 8vw;
-    left: -58vw;
+    left: -27vw;
   }
   .sc-visual .circle-area .circle:nth-child(2) {
     top: 4vw;
@@ -1373,10 +1403,10 @@ h2.title {
     left: 8vw;
   }
   .sc-build .headline {
-    font-size: 9vw;
+    font-size: 24px;
   }
   .sc-build .sub-title {
-    font-size: 18px;
+    font-size: 14px;
   }
   .sc-project .group-project {
     padding: 0 3%;
@@ -1450,6 +1480,12 @@ h2.title {
     height: 50vw;
   }
   .sc-skill .skill-area .skill-wrap .txt-box .headline {
-    font-size: 24px;
+    font-size: 18px;
+  }
+  .sc-skill .skill-area .skill-wrap .front-box .category span {
+    font-size: 10px;
+  }
+  .sc-skill .skill-area .skill-wrap .front-box .img-box {
+    top: 49%;
   }
 }/*# sourceMappingURL=style.css.map */
