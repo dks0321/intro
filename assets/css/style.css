@@ -134,7 +134,7 @@ h2.title {
 
 .headline {
   position: relative;
-  padding: 6vw;
+  padding: 30px 60px;
   font-size: 6vw;
 }
 
@@ -257,6 +257,7 @@ h2.title {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 .header .gnb .gnb-item {
   position: relative;
@@ -321,6 +322,7 @@ h2.title {
 @media (max-width: 500px) {
   .header {
     width: 100%;
+    min-width: 320px;
     height: 50px;
     top: calc(100% - 50px);
   }
@@ -393,12 +395,11 @@ h2.title {
 .footer .last-area .create-box {
   position: relative;
   overflow: hidden;
-  margin: 0 1vw;
-  height: 8vw;
-  border-radius: 10rem;
+  height: 130px;
+  border-radius: 100px;
   overflow: hidden;
   border: 1px solid #e0fd60;
-  font-size: 5vw;
+  font-size: 68px;
   -webkit-box-shadow: inset -2px 2px 9px 0px #000;
           box-shadow: inset -2px 2px 9px 0px #000;
   z-index: 5;
@@ -423,7 +424,7 @@ h2.title {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 1vw 3rem;
+  padding: 20px;
   -webkit-transition: 0.4s -webkit-transform;
   transition: 0.4s -webkit-transform;
   transition: 0.4s transform;
@@ -452,7 +453,7 @@ h2.title {
 }
 .footer .contact-area {
   position: absolute;
-  bottom: 20px;
+  bottom: 8%;
   margin-left: 24px;
   font-size: 14px;
 }
@@ -465,9 +466,37 @@ h2.title {
   font-family: "Pretendard", serif;
 }
 
+@media (max-width: 1024px) {
+  .footer .last-area {
+    font-size: 100px;
+  }
+  .footer .last-area .create-box {
+    height: 76px;
+    font-size: 32px;
+  }
+}
 @media (max-width: 500px) {
   .footer .last-area {
     font-size: 80px;
+  }
+  .footer .last-area .create-box {
+    height: 60px;
+    font-size: 24px;
+  }
+  .footer .last-area .create-box span {
+    padding: 16px;
+  }
+  .footer .contact-area {
+    left: 50%;
+    bottom: 15%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    margin-left: 0;
+  }
+  .footer .contact-area .contact {
+    display: block;
+    margin-top: 10px;
+    margin-left: 0;
   }
 }
 .overlay {
@@ -519,7 +548,7 @@ h2.title {
 .sc-visual {
   position: relative;
   overflow: hidden;
-  padding: 14vw 5vw;
+  padding: 180px 60px;
   font-family: "monetasans1", "Pretendard", sans-serif;
   background: #000;
 }
@@ -541,7 +570,7 @@ h2.title {
 .sc-visual .create-box {
   position: relative;
   overflow: hidden;
-  margin: 0 1vw;
+  margin: 0 10px;
   height: 8vw;
   border-radius: 100px;
   overflow: hidden;
@@ -893,12 +922,11 @@ h2.title {
 }
 .sc-project .group-project {
   overflow: hidden;
-  padding: 1vw;
 }
 .sc-project .project-area {
-  margin-top: 20px;
   position: relative;
-  height: 40vw;
+  margin: 40px;
+  max-height: 450px;
   overflow: hidden;
 }
 .sc-project .project-area .video-box {
@@ -1051,12 +1079,18 @@ h2.title {
   height: 10vw;
 }
 .sc-project .fx2 .txt-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   color: #fff;
-  font-size: 3vw;
+  font-size: 24px;
   -webkit-transition: -webkit-transform 0.3s;
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.sc-project .fx2 .txt-box span {
+  display: block;
 }
 .sc-project .fx2 .txt-box.on {
   opacity: 1;
@@ -1229,9 +1263,12 @@ h2.title {
   visibility: hidden;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
+  .sc-visual {
+    padding: 100px 60px;
+  }
   .sc-build .inner {
-    padding: 18vw 6vw;
+    padding: 65px 20px;
   }
   .sc-build .headline {
     padding: 0vw;
@@ -1267,6 +1304,9 @@ h2.title {
   }
 }
 @media (max-width: 720px) {
+  .sc-visual {
+    padding: 80px 40px;
+  }
   .sc-project .headline span::before {
     bottom: 0px;
     padding-top: 1px;
@@ -1287,9 +1327,12 @@ h2.title {
   .emoji {
     display: none;
   }
+  .headline {
+    padding: 6% 5%;
+    font-size: 20px;
+  }
   .sc-visual {
-    height: 500px;
-    padding: 40vw 4vw;
+    padding: 80px 10px;
   }
   .sc-visual .create-box {
     height: 11vw;
@@ -1328,8 +1371,35 @@ h2.title {
   .sc-build .sub-title {
     font-size: 18px;
   }
+  .sc-project .group-project {
+    padding: 0 3%;
+  }
+  .sc-project .headline span {
+    font-size: 20px;
+  }
   .sc-project .headline span::before {
     display: none;
+  }
+  .sc-project .career .item {
+    gap: 10px;
+  }
+  .sc-project .career .item h4 {
+    font-size: 16px;
+  }
+  .sc-project .career .item .date {
+    margin-top: 5px;
+  }
+  .sc-project .career .item .desc {
+    font-size: 14px;
+  }
+  .sc-project .project-area {
+    margin: 0;
+  }
+  .sc-project .project-area .video-box {
+    border-radius: 40px;
+  }
+  .sc-project .project-area .link-area {
+    padding: 10px;
   }
   .sc-project .project-area .link-area .inner {
     gap: 10px;
@@ -1354,10 +1424,13 @@ h2.title {
     height: 35px;
     font-size: 12px;
   }
-  .sc-project .fx2 {
-    display: block;
-  }
   .sc-project .fx2 .txt-box {
+    font-size: 12px;
+  }
+  .sc-project .pd5 {
+    margin-top: 10px;
+  }
+  .sc-project .pd5 .marquee .wrap span {
     font-size: 14px;
   }
   .sc-skill .skill-area {

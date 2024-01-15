@@ -28,12 +28,11 @@
         .create-box{
             position: relative;
             overflow: hidden;
-            margin: 0 1vw;
-            height: 8vw;
-            border-radius: 10rem;
+            height: 130px;
+            border-radius: 100px;
             overflow: hidden;
             border: 1px solid #e0fd60;
-            font-size: 5vw;
+            font-size: 68px;
             box-shadow:inset -2px 2px 9px 0px #000;
             z-index: 5;
             &:hover{
@@ -51,7 +50,7 @@
                 position: relative;
                 display: flex;
                 justify-content: center;
-                padding: 1vw 3rem;
+                padding: 20px;
                 transition: 0.4s transform;
                 font-weight: 400;
                 
@@ -77,7 +76,7 @@
     }
     .contact-area{
         position: absolute;
-        bottom: 20px;
+        bottom: 8%;
         margin-left: 24px;
         font-size: 14px;
         .contact{
@@ -91,11 +90,39 @@
     }
 
 }
-
+@media (max-width:1024px) {
+    .footer{
+        .last-area{
+            font-size: 100px;
+            .create-box{
+                height: 76px;
+                font-size: 32px;
+            }
+        }
+    }
+}
 @media (max-width:500px) {
     .footer{
         .last-area{
             font-size: 80px;
+            .create-box{
+                height: 60px;
+                font-size: 24px;
+                span{
+                    padding: 16px;
+                }
+            }
+        }
+        .contact-area{
+            left: 50%;
+            bottom: 15%;
+            transform: translateX(-50%);
+            margin-left: 0;
+            .contact{
+                display: block;
+                margin-top: 10px;
+                margin-left: 0;
+            }
         }
     }
 }
