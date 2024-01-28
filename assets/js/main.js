@@ -14,10 +14,6 @@ $(document).mousemove(function(e){
     })
 })
 
-$('.gnb-item a').click(function(){
-    console.log('클릭');
-});
-
  //header
  gsap.to('.header  .video-box',{
     scrollTrigger:{
@@ -69,7 +65,6 @@ $('[data-scroll]').each(function(i,el){
         yPercent:yVal
     })    
 })
-
 
 gsap.to('.marquee .wrap.lt',20,{
     xPercent:-50,
