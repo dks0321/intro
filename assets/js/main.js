@@ -14,30 +14,6 @@ $(document).mousemove(function(e){
     })
 })
 
- //header
- gsap.to('.header  .video-box',{
-    scrollTrigger:{
-        trigger:".header",
-        start:"0 10%",
-        end:"100% 100%",
-        //markers:true,
-        scrub:1,
-    },
-    width:"100%",
-    yPercent:30,
-    borderRadius: "400px",
-})
-//header txt
-const subTxt = new SplitType('.header .subtitle-area', { types: 'words, chars', });
-setTimeout(() => {
-    $('.subtitle-area').addClass('on')
-    gsap.from('.header .subtitle-area .char',{
-        opacity:0,
-        yPercent:40,
-        stagger:1,
-    })
-}, 500);
-
 $('.gnb-item a').on('click', function() {  
     $('html, body').animate({scrollTop: $(this.hash).offset().top}, 1000);
     return false;
