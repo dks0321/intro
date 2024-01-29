@@ -13,12 +13,10 @@ $(document).mousemove(function(e){
         y:e.clientY
     })
 })
-
 $('.gnb-item a').on('click', function() {  
     $('html, body').animate({scrollTop: $(this.hash).offset().top}, 1000);
     return false;
 });
-
 //sc-visual
 setTimeout(() => {
     gsap.to('.sc-visual .wrap',{
@@ -71,7 +69,3 @@ $('.skill-wrap').hover(function(){
 }, function(){
     $(this).siblings().stop().removeClass('back')
 })
-
-
-
-
